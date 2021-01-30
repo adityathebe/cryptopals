@@ -10,6 +10,6 @@ func TestAbs(t *testing.T) {
 		t.Fatal(err)
 	}
 	if b64Str != expected {
-		t.Errorf("Base64 strings didn't match")
+		t.Error("Base64 strings didn't match")
 	}
 }
