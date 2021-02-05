@@ -6,10 +6,11 @@ import (
 )
 
 func singleXOR(org []byte, x byte) []byte {
+	res := make([]byte, len(org))
 	for i := range org {
-		org[i] = org[i] ^ x
+		res[i] = org[i] ^ x
 	}
-	return org
+	return res
 }
 
 func measureScore(input []byte, scoreRef map[rune]float64) float64 {
